@@ -19,11 +19,13 @@ secondHalf = arr1.slice (-half);
 //the first element at the 0 index of the second half.
 
 function getMiddle() {
-    if (firstHalf > secondHalf) {
-        console.log(arr1[firstHalf.length]);
-    } else { 
-        console.log(arr1[firstHalf.length] + secondHalf[0]);
-    }
+    console.log(arr1);
+    console.log("yo");
+    // if (firstHalf > secondHalf) {
+    //     console.log(arr1[firstHalf.length]);
+    // } else { 
+    //     console.log(arr1[firstHalf.length] + secondHalf[0]);
+    // }
     
 }
 
