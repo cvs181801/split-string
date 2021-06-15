@@ -11,7 +11,7 @@ const half = Math.ceil(arr1.length/2);
 
 firstHalf = arr1.slice(0, half);
 //let arrFirstHalf = [];
-secondHalf = arr1.slice (-half);
+secondHalf = arr1.slice(-half);
 
 
 // compare the two halves.  If one is larger, return the element at the last index in the array.  
