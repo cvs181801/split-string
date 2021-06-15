@@ -27,6 +27,6 @@ function getMiddle(array) {
     }
 }
 
-console.log(`firstHalf: ${firstHalf}`);
-console.log(`secondHalf: ${secondHalf}`);
+console.log(`firstHalf: ${firstHalf.length}`);
+console.log(`secondHalf: ${secondHalf.length}`);
 getMiddle(arr1);
