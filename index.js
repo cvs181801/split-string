@@ -21,9 +21,9 @@ secondHalf = arr1.slice(-half);
 function getMiddle() {
     
     if (arr1[firstHalf.length] > arr1[secondHalf.length]) {
-        console.log(`${arr1[firstHalf.length]}`);
+        console.log( "farts stink");//`${arr1[firstHalf.length]}`);
     } else { 
-        console.log(`${arr1[firstHalf.length]}, ${secondHalf[0]}`);
+        console.log( "happiness"); //`${arr1[firstHalf.length]}, ${secondHalf[0]}`);
     }
     
 }
