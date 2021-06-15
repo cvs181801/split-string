@@ -18,12 +18,12 @@ secondHalf = arr1.slice(-half);
 //If both are the same size, return the element at the last index in the array in section 1, and 
 //the first element at the 0 index of the second half.
 
-function getMiddle() {
+function getMiddle(array) {
     
-    if (arr1[firstHalf.length] > arr1[secondHalf.length]) {
-        console.log(`${arr1[firstHalf.length]}`);
+    if (array[firstHalf.length] > array[secondHalf.length]) {
+        console.log(`${array[firstHalf.length]}`);
     } else { 
-        console.log(`${arr1[firstHalf.length]}, ${secondHalf[0]}`);
+        console.log(`${array[firstHalf.length]}, ${array[secondHalf[0]]}`);
     }
 }
 
