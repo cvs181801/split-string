@@ -23,7 +23,7 @@ function getMiddle() {
     if (firstHalf > secondHalf) {
         console.log(arr1[firstHalf.length]);
     } else { 
-        console.log(arr1[firstHalf.length] + secondHalf[0]);
+        console.log("arr1[firstHalf.length]" + "secondHalf[0]");
     }
     
 }
