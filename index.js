@@ -20,7 +20,7 @@ secondHalf = arr1.slice(-half + 1);
 
 function getMiddle(array) {
     
-    if (array[firstHalf.length] > array[secondHalf.length]) {
+    if (array[firstHalf.length] > array[Math.abs(secondHalf.length)]) {
         console.log(`${array[firstHalf.length - 1]}`);
     } else { 
         console.log(`${array[firstHalf.length]}, ${secondHalf[0]}`);
