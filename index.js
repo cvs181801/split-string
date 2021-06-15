@@ -24,10 +24,12 @@ function getMiddle(array) {
         console.log(`${array[firstHalf.length]}`);
     } else { 
         console.log(`${array[firstHalf.length]}, ${secondHalf[0]}`);
+        console.log(`this is wild: ${secondHalf[0]}`);
     }
 }
 
 console.log(half);
 console.log(`firstHalf: ${firstHalf.length}`);
 console.log(`secondHalf: ${secondHalf.length}`);
+
 getMiddle(arr1);
