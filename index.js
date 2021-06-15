@@ -4,7 +4,7 @@
 // separate each letter of the string into it's own element within the array
 //we'll get to these first two in a bit**
 
-arr1 = [6, 8, 9, 9, 9];
+arr1 = [7, 8, 9, 10, 11];
 
 // split the array in half
 const half = Math.ceil(arr1.length/2);
