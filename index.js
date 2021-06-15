@@ -4,7 +4,7 @@
 // separate each letter of the string into it's own element within the array
 //we'll get to these first two in a bit**
 
-arr1 = [7, 8, 9, 10, 11, 12, 13];
+arr1 = [7, 8, 9, 10, 11, 12];
 
 // split the array in half
  let half = arr1.length/2;
