@@ -20,8 +20,8 @@ secondHalf = arr1.slice (-half);
 
 function getMiddle() {
     
-    if (firstHalf > secondHalf) {
-        console.log(arr1[firstHalf.length]);
+    if (firstHalf.length > secondHalf.length) {
+        console.log(`${arr1[firstHalf.length]}`);
     } else { 
         console.log(`${arr1[firstHalf.length]}, ${secondHalf[0]}`);
     }
