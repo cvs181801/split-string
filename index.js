@@ -4,14 +4,14 @@
 // separate each letter of the string into it's own element within the array
 //we'll get to these first two in a bit**
 
-arr1 = [6, 8, 8, 9];
+arr1 = [6, 8, 9, 9, 9];
 
 // split the array in half
-const half = arr1.length/2;
+const half = Math.ceil(arr1.length/2);
 
-firstHalf = arr1.slice(0, half);
+firstHalf = arr1.slice(0, (half - 1));
 //let arrFirstHalf = [];
-secondHalf = arr1.slice(-half);
+secondHalf = arr1.slice(-half - 1);
 
 
 // compare the two halves.  If one is larger, return the element at the last index in the array.  
