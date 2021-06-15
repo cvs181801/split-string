@@ -7,7 +7,7 @@
 arr1 = [6, 7, 8,  9, 4, 6, 7];
 
 // split the array in half
-const half = Math.ceil(arr1.length/2);
+const half = arr1.length/2;
 
 firstHalf = arr1.slice(0, half);
 //let arrFirstHalf = [];
