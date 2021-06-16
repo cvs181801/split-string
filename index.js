@@ -4,10 +4,10 @@
 // separate each letter of the string into it's own element within the array
 //we'll get to these first two in a bit**
 
-arr1 = [7, 8, 9, 10, 11, 12];
+//arr1 = [7, 8, 9, 10, 11, 12];
 
 // split the array in half
- let half = arr1.length/2;
+//const half = arr1.length/2;
 
 // firstHalf = arr1.slice(0, half + 1);
 // //let arrFirstHalf = [];
@@ -34,12 +34,7 @@ arr1 = [7, 8, 9, 10, 11, 12];
 
 // getMiddle(arr1);
 
-function testFunction() {
-    if (half % 2 === 0) {
-    console.log("it's even");
-    } else {
-    console.log("it's odd");
-    }
-}
+randomString = "This is a random string hello world what what";
+const half = randomString.length/2;
 
-testFunction();
+console.log(half);
