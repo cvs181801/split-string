@@ -34,7 +34,7 @@
 
 // getMiddle(arr1);
 
-let randomString = document.getElementById("textBox");
+//let randomString = document.getElementById("textBox");
 const goButton = document.getElementById("go-btn");
 const parentDiv = document.getElementById("resultDiv");
 const renderPhrase = document.createElement('p');
