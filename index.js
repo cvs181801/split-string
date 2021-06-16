@@ -43,8 +43,6 @@ const renderPhrase = document.createElement('p');
 const half = randomString.length/2;
 
 function getMiddleOfString(string) {
-    //let randomString = document.getElementById("textBox");
-    //let half = randomString.length/2;
     if (string.length % 2 === 0) {
          renderPhrase.innerText = '';
          const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
@@ -52,11 +50,11 @@ function getMiddleOfString(string) {
          parentDiv.append(renderPhrase);
         //console.log(string.substring(half -1, half), string.substring(half, half + 1));
     } else {
-        //console.log(string.substring(half, half + 1));
          renderPhrase.innerText = '';
          oneLetter = string.substring(half, half + 1);
          renderPhrase.innerText = oneLetter;
          parentDiv.append(renderPhrase);
+         //console.log(string.substring(half, half + 1));
     }
 }
 
