@@ -49,13 +49,15 @@ function getMiddleOfString(string) {
     //let half = randomString.length/2;
     if (randomString.length % 2 === 0) {
          renderPhrase.innerText = '';
-         renderPhrase.innerText = `${string.substring(half -1, half) + string.substring(half, half + 1)}`;
+         const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
+         renderPhrase.innerText = twoLetters;
          parentDiv.append(renderPhrase);
         //console.log(string.substring(half -1, half), string.substring(half, half + 1));
     } else {
         //console.log(string.substring(half, half + 1));
          renderPhrase.innerText = '';
-         renderPhrase.innerText = `${string.substring(half, half + 1)}`;
+         oneLetter = string.substring(half, half + 1);
+         renderPhrase.innerText = oneLetter;
          parentDiv.append(renderPhrase);
     }
 }
