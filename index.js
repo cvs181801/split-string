@@ -34,12 +34,12 @@
 
 // getMiddle(arr1);
 
-//const randomString = document.getElementById("textBox");
+const randomString = document.getElementById("textBox");
 const goButton = document.getElementById("go-btn");
 const parentDiv = document.getElementById("resultDiv");
 const renderPhrase = document.createElement('p');
 
-const randomString = "AAAAAAABBBBBBB";
+//const randomString = "AAAAAAABBBBBBB";
 const half = randomString.length/2;
 
 function getMiddleOfString(string) {
