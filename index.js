@@ -34,12 +34,12 @@
 
 // getMiddle(arr1);
 
-//let randomString = document.getElementById("textBox");
+const randomString = document.getElementById("textBox");
 const goButton = document.getElementById("go-btn");
 const parentDiv = document.getElementById("resultDiv");
 const renderPhrase = document.createElement('p');
 
-const randomString = "AAAAAAABBBBBBB";
+//const randomString = "AAAAAAABBBBBBB";
 const half = randomString.length/2;
 
 //console.log(half);
@@ -48,15 +48,15 @@ function getMiddleOfString(string) {
     //let randomString = document.getElementById("textBox");
     //let half = randomString.length/2;
     if (randomString.length % 2 === 0) {
-        // renderPhrase.innerText = '';
-        // renderPhrase.innerText = `${string.substring(half -1, half)},${string.substring(half, half + 1)}`;
-        // parentDiv.append(renderPhrase);
-        console.log(string.substring(half -1, half), string.substring(half, half + 1));
+         renderPhrase.innerText = '';
+         renderPhrase.innerText = string.substring(half -1, half) + string.substring(half, half + 1);
+         parentDiv.append(renderPhrase);
+        //console.log(string.substring(half -1, half), string.substring(half, half + 1));
     } else {
-        console.log(string.substring(half, half + 1));
-        // renderPhrase.innerText = '';
-        // renderPhrase.innerText = `${string.substring(half, half + 1)}`;
-        // parentDiv.append(renderPhrase);
+        //console.log(string.substring(half, half + 1));
+         renderPhrase.innerText = '';
+         renderPhrase.innerText = string.substring(half, half + 1);
+         parentDiv.append(renderPhrase);
     }
 }
 
