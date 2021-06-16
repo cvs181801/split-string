@@ -59,5 +59,5 @@ function getMiddleOfString(string) {
 }
 
 goButton.addEventListener('click', function() {
-    return getMiddleOfString(randomString);
+    return getMiddleOfString(randomString.value);
 })
