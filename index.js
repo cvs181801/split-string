@@ -47,7 +47,7 @@ function getMiddleOfString(string) {
     //let half = randomString.length/2;
     if (string.length % 2 === 0) {
          renderPhrase.innerText = '';
-         const twoLetters = string.substring(half -1, half); + string.substring(half, half + 1);
+         const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
          renderPhrase.innerText = twoLetters;
          parentDiv.append(renderPhrase);
         //console.log(string.substring(half -1, half), string.substring(half, half + 1));
