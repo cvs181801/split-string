@@ -39,8 +39,8 @@ const goButton = document.getElementById("go-btn");
 const parentDiv = document.getElementById("resultDiv");
 const renderPhrase = document.createElement('p');
 
-let randomString = "AAAAAAABBBBBB";
-let half = randomString.length/2;
+const randomString = "AAAAAAABBBBBB";
+const half = randomString.length/2;
 
 //console.log(half);
 
