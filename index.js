@@ -38,3 +38,14 @@ randomString = "This is a random string hello world what what";
 const half = randomString.length/2;
 
 console.log(half);
+
+function getMiddleOfString(string) {
+    if (randomString.length % 2 === 0) {
+        console.log(`string.substring(${half -1}, ${half})`);
+        console.log(`string.substring(${half}, ${half + 1})`);
+    } else {
+        console.log(`string.substring(${half}, ${half + 1})`);
+    }
+}
+
+getMiddleOfString(randomString);
