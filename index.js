@@ -39,22 +39,21 @@ const goButton = document.getElementById("go-btn");
 const parentDiv = document.getElementById("resultDiv");
 const renderPhrase = document.createElement('p');
 
-//randomString = "AAAAAAABBBBBB";
+let randomString = "AAAAAAABBBBBB";
 let half = randomString.length/2;
 
 //console.log(half);
 
 function getMiddleOfString(string) {
-    let randomString = document.getElementById("textBox");
-    let half = randomString.length/2;
+    //let randomString = document.getElementById("textBox");
+    //let half = randomString.length/2;
     if (randomString.length % 2 === 0) {
         // renderPhrase.innerText = '';
         // renderPhrase.innerText = `${string.substring(half -1, half)},${string.substring(half, half + 1)}`;
         // parentDiv.append(renderPhrase);
-        console.log(`${string.substring(half -1, half)}`);
-        console.log(`${string.substring(half, half + 1)}`);
+        console.log(string.substring(half -1, half), string.substring(half, half + 1));
     } else {
-        console.log(`${string.substring(half, half + 1)}`);
+        console.log(string.substring(half, half + 1));
         // renderPhrase.innerText = '';
         // renderPhrase.innerText = `${string.substring(half, half + 1)}`;
         // parentDiv.append(renderPhrase);
