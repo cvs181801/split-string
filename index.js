@@ -34,7 +34,7 @@
 
 // getMiddle(arr1);
 
-randomString = "This is a random string hello world what what";
+randomString = "AAAAAAABBBBBB";
 const half = randomString.length/2;
 
 console.log(half);
