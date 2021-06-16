@@ -46,20 +46,19 @@ const half = randomString.length/2;
 
 function getMiddleOfString(string) {
     if (randomString.length % 2 === 0) {
-        renderPhrase.innerText = '';
-        renderPhrase.innerText = `${string.substring(half -1, half)},${string.substring(half, half + 1)}`;
-        parentDiv.append(renderPhrase);
-        //console.log(`${string.substring(half -1, half)}`);
-        //console.log(`${string.substring(half, half + 1)}`);
+        // renderPhrase.innerText = '';
+        // renderPhrase.innerText = `${string.substring(half -1, half)},${string.substring(half, half + 1)}`;
+        // parentDiv.append(renderPhrase);
+        console.log(`${string.substring(half -1, half)}`);
+        console.log(`${string.substring(half, half + 1)}`);
     } else {
-        //console.log(`${string.substring(half, half + 1)}`);
-        renderPhrase.innerText = '';
-        renderPhrase.innerText = `${string.substring(half, half + 1)}`;
-        parentDiv.append(renderPhrase);
+        console.log(`${string.substring(half, half + 1)}`);
+        // renderPhrase.innerText = '';
+        // renderPhrase.innerText = `${string.substring(half, half + 1)}`;
+        // parentDiv.append(renderPhrase);
     }
 }
 
 goButton.addEventListener('click', function() {
-    //return getMiddleOfString(randomString);
-    console.log("this is working");
+    return getMiddleOfString(randomString);
 })
