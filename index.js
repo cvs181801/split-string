@@ -42,7 +42,7 @@ const renderPhrase = document.createElement("p");
 //const randomString = "AAAAAAABBBBBBB";
 
 
-function getMiddleOfString(string) {
+function getMiddleOfString(string, ev) {
     var string = randomString.value;
     const half = randomString.value.length/2;
     
@@ -62,11 +62,12 @@ function getMiddleOfString(string) {
          parentDiv.append(renderPhrase);
          //console.log(string.substring(half, half + 1));
     }
+    ev.stopPropagation();
 }
 
 goButton.addEventListener('click', function() {
     return getMiddleOfString(randomString);
 })
-event.stopPropagation();
+
 //console.log(randomString);
 //console.log(randomString.value);
