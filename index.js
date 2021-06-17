@@ -35,7 +35,7 @@
 // getMiddle(arr1);
 
 const randomString = document.getElementById("textBox");
-console.log(randomString);
+
 const goButton = document.getElementById("go-btn");
 const parentDiv = document.getElementById("resultDiv");
 const renderPhrase = document.createElement("p");
@@ -62,3 +62,5 @@ function getMiddleOfString(string) {
 goButton.addEventListener('click', function() {
     return getMiddleOfString(randomString.value);
 })
+
+console.log(randomString.value);
