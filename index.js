@@ -63,11 +63,13 @@ function getMiddleOfString(string) {
     }
 }
 
-function stopEvent(e) {
-    e.stopPropagation();
-}
+
 
 goButton.addEventListener('click', function() {
     return getMiddleOfString(randomString);
 })
+
+function stopEvent(e) {
+    e.stopPropagation();
+}
 
