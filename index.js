@@ -42,32 +42,32 @@ const renderPhrase = document.createElement("p");
 //const randomString = "AAAAAAABBBBBBB";
 
 
-function getMiddleOfString(string, ev) {
+function getMiddleOfString(string) {
     var string = randomString.value;
     const half = randomString.value.length/2;
     
-    //const string=string.value;
     if (string.length % 2 === 0) {
          renderPhrase.innerText = '';
          const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
          renderPhrase.innerText = twoLetters;
-         //ev.stopPropagation();
          parentDiv.append(renderPhrase);
-        //console.log(string.substring(half -1, half), string.substring(half, half + 1));
+         return stopEvent();
+       
     } else {
          renderPhrase.innerText = '';
          oneLetter = string.substring(half, half + 1);
          renderPhrase.innerText = oneLetter;
-         //ev.stopPropagation();
          parentDiv.append(renderPhrase);
-         //console.log(string.substring(half, half + 1));
+         return stopEvent();
+        
     }
-    ev.stopPropagation();
+}
+
+function stopEvent(e) {
+    e.stopPropagation();
 }
 
 goButton.addEventListener('click', function() {
     return getMiddleOfString(randomString);
 })
 
-//console.log(randomString);
-//console.log(randomString.value);
