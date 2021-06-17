@@ -44,16 +44,16 @@ const renderPhrase = document.createElement("p");
 
 function getMiddleOfString(string) {
     const half = randomString.value.length/2;
-    const string=string.value;
-    if (string.length % 2 === 0) {
+    //const string=string.value;
+    if (string.value.length % 2 === 0) {
          renderPhrase.innerText = '';
-         const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
+         const twoLetters = string.value.substring(half -1, half) + string.value.substring(half, half + 1);
          renderPhrase.innerText = twoLetters;
          parentDiv.append(renderPhrase);
         //console.log(string.substring(half -1, half), string.substring(half, half + 1));
     } else {
          renderPhrase.innerText = '';
-         oneLetter = string.substring(half, half + 1);
+         oneLetter = string.value.substring(half, half + 1);
          renderPhrase.innerText = oneLetter;
          parentDiv.append(renderPhrase);
          //console.log(string.substring(half, half + 1));
