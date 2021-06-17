@@ -63,4 +63,5 @@ goButton.addEventListener('click', function() {
     return getMiddleOfString(randomString.value);
 })
 
+console.log(randomString);
 console.log(randomString.value);
