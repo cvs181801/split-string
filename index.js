@@ -44,7 +44,7 @@ const renderPhrase = document.createElement("p");
 
 function getMiddleOfString(string) {
     const half = randomString.value.length/2;
-    string=string.value;
+    const string=string.value;
     if (string.length % 2 === 0) {
          renderPhrase.innerText = '';
          const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
