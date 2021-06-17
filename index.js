@@ -34,32 +34,30 @@
 
 // getMiddle(arr1);
 
-const randomString = document.getElementById("textBox");
-const stringValue = randomString.value;
-console.log(stringValue);
-// const goButton = document.getElementById("go-btn");
-// const parentDiv = document.getElementById("resultDiv");
-// const renderPhrase = document.createElement("p");
+const randomString = document.getElementById("textBox").value;
+const goButton = document.getElementById("go-btn");
+const parentDiv = document.getElementById("resultDiv");
+const renderPhrase = document.createElement("p");
 
-// //const randomString = "AAAAAAABBBBBBB";
-// const half = randomString.length/2;
+//const randomString = "AAAAAAABBBBBBB";
+const half = randomString.length/2;
 
-// function getMiddleOfString(string) {
-//     if (string.length % 2 === 0) {
-//          renderPhrase.innerText = '';
-//          const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
-//          renderPhrase.innerText = twoLetters;
-//          parentDiv.append(renderPhrase);
-//         //console.log(string.substring(half -1, half), string.substring(half, half + 1));
-//     } else {
-//          renderPhrase.innerText = '';
-//          oneLetter = string.substring(half, half + 1);
-//          renderPhrase.innerText = oneLetter;
-//          parentDiv.append(renderPhrase);
-//          //console.log(string.substring(half, half + 1));
-//     }
-// }
+function getMiddleOfString(string) {
+    if (string.length % 2 === 0) {
+         renderPhrase.innerText = '';
+         const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
+         renderPhrase.innerText = twoLetters;
+         parentDiv.append(renderPhrase);
+        //console.log(string.substring(half -1, half), string.substring(half, half + 1));
+    } else {
+         renderPhrase.innerText = '';
+         oneLetter = string.substring(half, half + 1);
+         renderPhrase.innerText = oneLetter;
+         parentDiv.append(renderPhrase);
+         //console.log(string.substring(half, half + 1));
+    }
+}
 
-// goButton.addEventListener('click', function() {
-//     return getMiddleOfString(randomString.value);
-// })
+goButton.addEventListener('click', function() {
+    return getMiddleOfString(randomString);
+})
