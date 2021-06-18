@@ -13,3 +13,6 @@ body {
     color: white;
 
 }
+h1 {
+    font-family: var(--ff-Accent);
+}
