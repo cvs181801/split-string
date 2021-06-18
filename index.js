@@ -51,25 +51,23 @@ function getMiddleOfString(string) {
          const twoLetters = string.substring(half -1, half) + string.substring(half, half + 1);
          renderPhrase.innerText = twoLetters;
          parentDiv.append(renderPhrase);
-         return stopEvent();
+         
        
     } else {
          renderPhrase.innerText = '';
          oneLetter = string.substring(half, half + 1);
          renderPhrase.innerText = oneLetter;
          parentDiv.append(renderPhrase);
-         return stopEvent();
-        
+
     }
 }
 
-
-
-goButton.addEventListener('click', function() {
+goButton.addEventListener('click', function(e) {
+    e.preventDefault();
     return getMiddleOfString(randomString);
 })
 
-function stopEvent(e) {
-    e.stopPropagation();
-}
+// function stopEvent(e) {
+//     e.preventDefault();
+// }
 
