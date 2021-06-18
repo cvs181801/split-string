@@ -20,3 +20,12 @@ body {
 h1 {
     font-family: var(--ff-Accent);
 }
+
+#resultDiv {
+    matgin-bottom: 4em;
+}
+
+p {
+    font-size: 4rem;
+    
+}
